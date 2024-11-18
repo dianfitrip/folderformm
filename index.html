@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Register</title>
+    <style>
+       
+        body {
+            background-color: #8B4513; 
+            color: black; 
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        
+        .form-container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: yellow; 
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .center-image {
+            display: block;
+            margin: 20px auto;
+        }
+
+        
+        .form-table {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        
+        .judul {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #d1a17a; 
+            background-color: peachpuff; 
+            color: black; 
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        
+        .btn-submit {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+
+        
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        
+        table td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 class="judul">Form Registrasi Fans Yamada</h1>
+        
+        <img src="https://i.pinimg.com/736x/0d/c6/13/0dc6137a93ffde77d07fbf78583bba8c.jpg" 
+             alt="Foto Yamada Manga" 
+             class="center-image"
+             width="300" 
+             height="300">
+
+        
+        <form>
+            <table class="form-table">
+                <tr>
+                    <td><label for="fname">Masukkan Nama Anda</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Masukkan Email Anda</label></td>
+                    <td>:</td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Masukkan Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" id="pwd" name="pwd" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Masukkan Nomor Telepon</label></td>
+                    <td>:</td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="+62" pattern="^\+62[0-9]{9,13}$" required></td>
+                </tr>
+                <tr>
+                    <td><label for="datemin">Masukkan Tanggal Lahir Anda</label></td>
+                    <td>:</td>
+                    <td><input type="date" id="datemin" name="datemin" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" class="btn-submit">
+        </form>
+    </div>
+</body>
+
+</html>
